@@ -1,0 +1,26 @@
+api:
+  version: v1
+http:
+  ipAddress: "0.0.0.0"
+  port: 9600
+  readTimeout: 10
+  writeTimeout: 10
+  idleTimeout: 10
+  clientTimeout: 10
+db:
+  name: "driver"
+  connectionString: "xxx"
+log:
+  file: "/var/log/matching-api/app.log"
+  level: "prod"
+  maxAge: 10
+  maxSize: 10
+  maxBackups: 10
+  gzipArchive: true
+  access:
+    file: "/var/log/matching-api/access.log"
+remote:
+  driverLocationApi: 
+    url: "http://localhost:9800"
+
+

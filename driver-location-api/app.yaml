@@ -1,0 +1,26 @@
+api:
+  version: v1
+http:
+  ipAddress: "0.0.0.0"
+  port: 9800
+  readTimeout: 10
+  writeTimeout: 10
+  idleTimeout: 10
+  clientTimeout: 10
+db:
+  name: "driver-location-api"
+  connectionString: "mongodb://localhost:27017"
+log:
+  file: "/var/log/driver-location-api/app.log"
+  level: "prod"
+  maxAge: 10
+  maxSize: 10
+  maxBackups: 10
+  gzipArchive: true
+  access:
+    file: "/var/log/driver-location-api/access.log"
+remote:
+  matchingApi: 
+    url: "http://localhost:9600"
+
+
