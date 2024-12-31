@@ -3,7 +3,7 @@ module github.com/aniladanir/bitaksi-casestudy/matching-api
 go 1.22.2
 
 require (
-	github.com/aniladanir/bitaksi-casestudy/shared v0.0.0-20241230232347-0daf6bb40657
+	github.com/aniladanir/bitaksi-casestudy/shared v0.0.0-20241231104028-d54e3cfcc0af
 	github.com/gofiber/fiber/v3 v3.0.0-beta.3
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/google/uuid v1.6.0

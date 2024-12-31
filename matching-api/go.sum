@@ -10,6 +10,8 @@ github.com/aniladanir/bitaksi-casestudy/shared v0.0.0-20241230225129-d88703cb7db
 github.com/aniladanir/bitaksi-casestudy/shared v0.0.0-20241230225129-d88703cb7dba/go.mod h1:pvuRP3pL2wyYiy91AjCItZVn22usfC9Vo6Z9PNK0bAE=
 github.com/aniladanir/bitaksi-casestudy/shared v0.0.0-20241230232347-0daf6bb40657 h1:NBJqH+nEoi+FHBpkp/U4MxQpCpCzlua6Hci/AOZHE0M=
 github.com/aniladanir/bitaksi-casestudy/shared v0.0.0-20241230232347-0daf6bb40657/go.mod h1:pvuRP3pL2wyYiy91AjCItZVn22usfC9Vo6Z9PNK0bAE=
+github.com/aniladanir/bitaksi-casestudy/shared v0.0.0-20241231104028-d54e3cfcc0af h1:JdLjAH6UxgfQnZ/DrWLQJBzU25UVldiNx8fNXUmYW4U=
+github.com/aniladanir/bitaksi-casestudy/shared v0.0.0-20241231104028-d54e3cfcc0af/go.mod h1:pvuRP3pL2wyYiy91AjCItZVn22usfC9Vo6Z9PNK0bAE=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc h1:U9qPSI2PIWSS1VwoXQT9A3Wy9MM3WgvqSxFWenqJduM=
