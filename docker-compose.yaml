@@ -1,0 +1,24 @@
+services:
+  mongodb:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    networks:
+      - app_network
+  driver-location-api:
+    build: ./driver-location-api
+    networks:
+      - app_network
+    depends_on:
+      - mongodb
+    restart: always
+  matching-api:
+    build: ./matching-api
+    ports:
+      - "9600:9600"
+    networks:
+      - app_network
+    restart: always
+networks:
+  app_network:
+    driver: bridge

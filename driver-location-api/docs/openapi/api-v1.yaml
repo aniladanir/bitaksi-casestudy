@@ -1,0 +1,93 @@
+openapi: 3.0.0
+info:
+  title: Driver Location API
+  version: 1.0.0
+  description: API for managing driver locations
+paths:
+  /api/v1/driver/location:
+    post:
+      summary: Get nearest driver location
+      description: Retrieves the location of the nearest driver based on the given location and radius.
+      tags:
+        - driver
+      parameters:
+        - name: Authorization
+          in: header
+          description: Authorization token
+          required: true
+          schema:
+            type: string
+        - name: radius
+          in: query
+          description: Radius in meters for searching drivers
+          required: true
+          schema:
+            type: number
+            format: float
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Location'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DriverLocationResponse'
+        '400':
+          description: Bad request, invalid input
+        '401':
+          description: Unauthorized
+        '404':
+          description: Driver location not found
+        '500':
+          description: Internal server error
+components:
+  securitySchemes:
+    apiKeyAuth:
+      type: apiKey
+      name: Authorization 
+      in: header
+  schemas:
+    Location:
+      type: object
+      properties:
+        type:
+          type: string
+          example: Point
+        coordinates:
+          type: array
+          items:
+            type: number
+          example:
+            - -122.4194
+            - 37.7749
+    DriverLocationResponse:
+      type: object
+      properties:
+        distance:
+          type: object
+          properties:
+            distance:
+              type: number
+              format: float
+              example: 10
+            unit:
+              type: string
+              example: km
+        location:
+          type: object
+          properties:
+            type:
+              type: string
+              enum: ["Point"]
+            coordinates:
+              type: array
+              items:
+                type: number
+              example:
+                - -122.4194
+                - 37.7749

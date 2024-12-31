@@ -1,0 +1,7 @@
+go 1.22.2
+
+use ./driver-location-api
+
+use ./matching-api
+
+use ./shared
